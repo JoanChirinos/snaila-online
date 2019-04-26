@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>index</title>
+      <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(114, 145, 207); background-color: rgb(4, 5, 6); overflow: auto; }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(236, 240, 248); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgb(236, 240, 248); }
+.markdown-preview:not([data-use-github-style]) del { color: rgb(175, 192, 228); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: rgb(82, 139, 255); }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(175, 192, 228); border-color: rgb(35, 42, 57); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top: 2px dashed rgb(35, 42, 57); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgb(236, 240, 248); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(35, 42, 57); }
+.markdown-preview:not([data-use-github-style]) code { color: rgb(236, 240, 248); background-color: rgb(19, 23, 32); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(12, 14, 19); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(236, 240, 248); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(35, 42, 57) rgb(35, 42, 57) rgb(23, 28, 38); border-image: initial; background-color: rgb(19, 23, 32); }
+.markdown-preview[data-use-github-style] { font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); overflow: scroll; }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left: 4px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { background-color: rgb(255, 255, 255); border-top: 1px solid rgb(204, 204, 204); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; background-color: rgba(0, 0, 0, 0.04); border-radius: 3px; }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; background: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border-radius: 3px; }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { word-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; background-color: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; background-color: rgb(252, 252, 252); border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-image: initial; border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.markdown-preview pre.editor-colors { user-select: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .horizontal-scrollbar { visibility: visible; }
+.markdown-preview .task-list-item-checkbox { position: absolute; margin: 0.25em 0px 0px -1.4em; }
+.markdown-preview ul label { vertical-align: top; }
+.markdown-preview code { text-shadow: none; }
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+.line-number.bracket-matcher.bracket-matcher {
+  color: #7291cf;
+  background-color: #131720;
+}
+
+.markdown-themeable-pdf-page-break {
+  border-top: 2px dotted #0098ff;
+}
+.markdown-themeable-pdf-page-break span {
+  opacity: .35;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
+}
+
+@import 'syntax/css';
+pre.editor-colors {
+  background-color: #040506;
+  color: #7291cf;
+}
+pre.editor-colors .line.cursor-line {
+  background-color: rgba(153, 187, 255, 0.04);
+}
+pre.editor-colors .invisible {
+  color: #7291cf;
+}
+pre.editor-colors .cursor {
+  border-left: 2px solid #528bff;
+}
+pre.editor-colors .selection .region {
+  background-color: #0e1016;
+}
+pre.editor-colors .bracket-matcher .region {
+  border-bottom: 1px solid #528bff;
+  box-sizing: border-box;
+}
+pre.editor-colors .invisible-character {
+  color: rgba(114, 145, 207, 0.25);
+}
+pre.editor-colors .indent-guide {
+  color: rgba(114, 145, 207, 0.25);
+}
+pre.editor-colors .wrap-guide {
+  background-color: rgba(114, 145, 207, 0.25);
+}
+pre.editor-colors .find-result .region.region.region,
+pre.editor-colors .current-result .region.region.region {
+  border-radius: 2px;
+  background-color: rgba(82, 139, 255, 0.24);
+  transition: border-color 0.4s;
+}
+pre.editor-colors .find-result .region.region.region {
+  border: 2px solid transparent;
+}
+pre.editor-colors .current-result .region.region.region {
+  border: 2px solid #528bff;
+  transition-duration: 0.1s;
+}
+pre.editor-colors .gutter .line-number {
+  color: #304f8d;
+  -webkit-font-smoothing: antialiased;
+}
+pre.editor-colors .gutter .line-number.cursor-line {
+  color: #7291cf;
+  background-color: #131720;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection {
+  background-color: transparent;
+}
+pre.editor-colors .gutter .line-number .icon-right {
+  color: #7291cf;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before {
+  bottom: -3px;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 25px;
+  border-bottom: 1px dotted rgba(224, 82, 82, 0.5);
+  pointer-events: none;
+}
+pre.editor-colors .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+pre.editor-colors .fold-marker:after {
+  color: #7291cf;
+}
+pre.editor-colors .line-number.bracket-matcher {
+  background: #4d78cc;
+  color: #ffffff;
+}
+pre.editor-colors pre.editor-colors .highlight-selected .region.region.region {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #528bff;
+}
+pre.editor-colors pre.editor-colors .highlight-selected.syntax--background .region.region {
+  background-color: rgba(82, 139, 255, 0.24);
+}
+.syntax--comment {
+  color: #a7bbe1;
+  font-style: italic;
+}
+.syntax--comment .syntax--markup.syntax--link {
+  color: #a7bbe1;
+}
+.syntax--entity.syntax--name.syntax--type {
+  color: #a1ffff;
+}
+.syntax--entity.syntax--other.syntax--inherited-class {
+  color: #92ff8e;
+}
+.syntax--keyword {
+  color: #7b8fcc;
+}
+.syntax--keyword.syntax--control {
+  color: #7b8fcc;
+}
+.syntax--keyword.syntax--operator {
+  color: #7291cf;
+}
+.syntax--keyword.syntax--operator.syntax--assignment {
+  color: #85CCFF;
+}
+.syntax--keyword.syntax--other.syntax--special-method {
+  color: #fbff94;
+}
+.syntax--keyword.syntax--other.syntax--unit {
+  color: #ffb27a;
+}
+.syntax--storage {
+  color: #7b8fcc;
+}
+.syntax--storage.syntax--type.syntax--annotation,
+.syntax--storage.syntax--type.syntax--primitive {
+  color: #7b8fcc;
+}
+.syntax--storage.syntax--modifier.syntax--package,
+.syntax--storage.syntax--modifier.syntax--import {
+  color: #7291cf;
+}
+.syntax--constant {
+  color: #ffb27a;
+}
+.syntax--constant.syntax--boolean {
+  color: #fa4747;
+}
+.syntax--constant.syntax--variable {
+  color: #ffb27a;
+}
+.syntax--constant.syntax--character.syntax--escape {
+  color: #85CCFF;
+}
+.syntax--constant.syntax--numeric {
+  color: #ffb27a;
+}
+.syntax--constant.syntax--other.syntax--color {
+  color: #85CCFF;
+}
+.syntax--constant.syntax--other.syntax--symbol {
+  color: #85CCFF;
+}
+.syntax--variable {
+  color: #fa4747;
+}
+.syntax--variable.syntax--interpolation {
+  color: #fa4747;
+}
+.syntax--variable.syntax--parameter {
+  color: #7291cf;
+}
+.syntax--string {
+  color: #92ff8e;
+}
+.syntax--string > .syntax--source {
+  color: #7291cf;
+}
+.syntax--string.syntax--regexp {
+  color: #85CCFF;
+}
+.syntax--string.syntax--regexp .syntax--source.syntax--ruby.syntax--embedded {
+  color: #a1ffff;
+}
+.syntax--string.syntax--other.syntax--link {
+  color: #fa4747;
+}
+.syntax--punctuation.syntax--definition.syntax--comment {
+  color: #a7bbe1;
+}
+.syntax--punctuation.syntax--definition.syntax--method-parameters,
+.syntax--punctuation.syntax--definition.syntax--function-parameters,
+.syntax--punctuation.syntax--definition.syntax--parameters,
+.syntax--punctuation.syntax--definition.syntax--separator,
+.syntax--punctuation.syntax--definition.syntax--seperator,
+.syntax--punctuation.syntax--definition.syntax--array {
+  color: #7291cf;
+}
+.syntax--punctuation.syntax--definition.syntax--heading,
+.syntax--punctuation.syntax--definition.syntax--identity {
+  color: #fbff94;
+}
+.syntax--punctuation.syntax--definition.syntax--bold {
+  color: #a1ffff;
+  font-weight: bold;
+}
+.syntax--punctuation.syntax--definition.syntax--italic {
+  color: #7b8fcc;
+  font-style: italic;
+}
+.syntax--punctuation.syntax--section.syntax--embedded {
+  color: #fa4747;
+}
+.syntax--punctuation.syntax--section.syntax--method,
+.syntax--punctuation.syntax--section.syntax--class,
+.syntax--punctuation.syntax--section.syntax--inner-class {
+  color: #7291cf;
+}
+.syntax--punctuation.syntax--terminator {
+  color: #385ca4;
+}
+.syntax--support.syntax--class {
+  color: #a1ffff;
+}
+.syntax--support.syntax--type {
+  color: #85CCFF;
+}
+.syntax--support.syntax--type.syntax--css.syntax--property-name,
+.syntax--support.syntax--type.syntax--css.syntax--property-value {
+  color: #7291cf;
+}
+.syntax--support.syntax--function {
+  color: #85CCFF;
+}
+.syntax--support.syntax--function.syntax--any-method {
+  color: #fbff94;
+}
+.syntax--entity.syntax--name.syntax--function {
+  color: #fbff94;
+}
+.syntax--entity.syntax--name.syntax--class,
+.syntax--entity.syntax--name.syntax--type.syntax--class {
+  color: #a1ffff;
+}
+.syntax--entity.syntax--name.syntax--section {
+  color: #fbff94;
+}
+.syntax--entity.syntax--name.syntax--tag {
+  color: #fa4747;
+}
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: #ffb27a;
+}
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--id {
+  color: #fbff94;
+}
+.syntax--meta.syntax--class {
+  color: #a1ffff;
+}
+.syntax--meta.syntax--class.syntax--body,
+.syntax--meta.syntax--class.syntax--html {
+  color: #7291cf;
+}
+.syntax--meta.syntax--method-call,
+.syntax--meta.syntax--method {
+  color: #7291cf;
+}
+.syntax--meta.syntax--definition.syntax--variable {
+  color: #fa4747;
+}
+.syntax--meta.syntax--link {
+  color: #ffb27a;
+}
+.syntax--meta.syntax--require {
+  color: #fbff94;
+}
+.syntax--meta.syntax--selector {
+  color: #7b8fcc;
+}
+.syntax--meta.syntax--separator {
+  color: #7291cf;
+}
+.syntax--meta.syntax--tag {
+  color: #7291cf;
+}
+.syntax--underline {
+  text-decoration: underline;
+}
+.syntax--none {
+  color: #7291cf;
+}
+.syntax--invalid.syntax--deprecated {
+  color: #523d14 !important;
+  background-color: #e0c285 !important;
+}
+.syntax--invalid.syntax--illegal {
+  color: white !important;
+  background-color: #e05252 !important;
+}
+.syntax--markup.syntax--bold {
+  color: #ffb27a;
+  font-weight: bold;
+}
+.syntax--markup.syntax--changed {
+  color: #7b8fcc;
+}
+.syntax--markup.syntax--deleted {
+  color: #fa4747;
+}
+.syntax--markup.syntax--italic {
+  color: #7b8fcc;
+  font-style: italic;
+}
+.syntax--markup.syntax--heading {
+  color: #fa4747;
+}
+.syntax--markup.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
+  color: #fbff94;
+}
+.syntax--markup.syntax--link {
+  color: #85CCFF;
+}
+.syntax--markup.syntax--inserted {
+  color: #92ff8e;
+}
+.syntax--markup.syntax--quote {
+  color: #ffb27a;
+}
+.syntax--markup.syntax--raw {
+  color: #92ff8e;
+}
+.syntax--source.syntax--c .syntax--keyword.syntax--operator {
+  color: #7b8fcc;
+}
+.syntax--source.syntax--cpp .syntax--keyword.syntax--operator {
+  color: #7b8fcc;
+}
+.syntax--source.syntax--cs .syntax--keyword.syntax--operator {
+  color: #7b8fcc;
+}
+.syntax--source.syntax--elixir .syntax--source.syntax--embedded.syntax--source {
+  color: #7291cf;
+}
+.syntax--source.syntax--elixir .syntax--constant.syntax--language,
+.syntax--source.syntax--elixir .syntax--constant.syntax--numeric,
+.syntax--source.syntax--elixir .syntax--constant.syntax--definition {
+  color: #fbff94;
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--definition,
+.syntax--source.syntax--elixir .syntax--variable.syntax--anonymous {
+  color: #7b8fcc;
+}
+.syntax--source.syntax--elixir .syntax--parameter.syntax--variable.syntax--function {
+  color: #ffb27a;
+  font-style: italic;
+}
+.syntax--source.syntax--elixir .syntax--quoted {
+  color: #92ff8e;
+}
+.syntax--source.syntax--elixir .syntax--keyword.syntax--special-method,
+.syntax--source.syntax--elixir .syntax--embedded.syntax--section,
+.syntax--source.syntax--elixir .syntax--embedded.syntax--source.syntax--empty {
+  color: #fa4747;
+}
+.syntax--source.syntax--elixir .syntax--readwrite.syntax--module .syntax--punctuation {
+  color: #fa4747;
+}
+.syntax--source.syntax--elixir .syntax--regexp.syntax--section,
+.syntax--source.syntax--elixir .syntax--regexp.syntax--string {
+  color: #fa4747;
+}
+.syntax--source.syntax--elixir .syntax--separator,
+.syntax--source.syntax--elixir .syntax--keyword.syntax--operator {
+  color: #ffb27a;
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--constant {
+  color: #a1ffff;
+}
+.syntax--source.syntax--elixir .syntax--array,
+.syntax--source.syntax--elixir .syntax--scope,
+.syntax--source.syntax--elixir .syntax--section {
+  color: #385ca4;
+}
+.syntax--source.syntax--gfm .syntax--markup {
+  -webkit-font-smoothing: auto;
+}
+.syntax--source.syntax--gfm .syntax--link .syntax--entity {
+  color: #fbff94;
+}
+.syntax--source.syntax--go .syntax--storage.syntax--type.syntax--string {
+  color: #7b8fcc;
+}
+.syntax--source.syntax--ini .syntax--keyword.syntax--other.syntax--definition.syntax--ini {
+  color: #fa4747;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--modifier.syntax--import {
+  color: #a1ffff;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--type {
+  color: #a1ffff;
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair {
+  color: #fa4747;
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair > .syntax--punctuation {
+  color: #7291cf;
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--operator {
+  color: #85CCFF;
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--delete,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--in,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--of,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--instanceof,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--new,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--typeof,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--void {
+  color: #7b8fcc;
+}
+.syntax--source.syntax--js .syntax--variable.syntax--language {
+  color: #fa4747;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json {
+  color: #fbff94;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation.syntax--string {
+  color: #fbff94;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation {
+  color: #92ff8e;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--constant.syntax--language.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--constant.syntax--language.syntax--json {
+  color: #fa4747;
+}
+.syntax--source.syntax--less .syntax--mixin {
+  color: #fbff94;
+}
+.syntax--source.syntax--less .syntax--variable {
+  color: #fa4747;
+}
+.syntax--ng.syntax--interpolation {
+  color: #fa4747;
+}
+.syntax--ng.syntax--interpolation.syntax--begin,
+.syntax--ng.syntax--interpolation.syntax--end {
+  color: #fbff94;
+}
+.syntax--ng.syntax--interpolation .syntax--function {
+  color: #fa4747;
+}
+.syntax--ng.syntax--interpolation .syntax--function.syntax--begin,
+.syntax--ng.syntax--interpolation .syntax--function.syntax--end {
+  color: #fbff94;
+}
+.syntax--ng.syntax--interpolation .syntax--bool {
+  color: #ffb27a;
+}
+.syntax--ng.syntax--interpolation .syntax--bracket {
+  color: #7291cf;
+}
+.syntax--ng.syntax--pipe,
+.syntax--ng.syntax--operator {
+  color: #7291cf;
+}
+.syntax--ng.syntax--tag {
+  color: #85CCFF;
+}
+.syntax--ng.syntax--attribute-with-value .syntax--attribute-name {
+  color: #a1ffff;
+}
+.syntax--ng.syntax--attribute-with-value .syntax--string {
+  color: #7b8fcc;
+}
+.syntax--ng.syntax--attribute-with-value .syntax--string.syntax--begin,
+.syntax--ng.syntax--attribute-with-value .syntax--string.syntax--end {
+  color: #7291cf;
+}
+.syntax--source.syntax--ruby .syntax--constant.syntax--other.syntax--symbol > .syntax--punctuation {
+  color: inherit;
+}
+.syntax--source.syntax--ruby .syntax--variable {
+  color: #fa4747;
+}
+.syntax--source.syntax--php .syntax--class.syntax--bracket {
+  color: #7291cf;
+}
+.syntax--source.syntax--python .syntax--keyword.syntax--operator.syntax--logical.syntax--python {
+  color: #7b8fcc;
+}
+.syntax--source.syntax--python .syntax--variable.syntax--parameter {
+  color: #ffb27a;
+}
+.syntax--source.syntax--sass .syntax--variable-declaration .syntax--punctuation.syntax--definition,
+.syntax--source.syntax--sass .syntax--variable-usage .syntax--punctuation.syntax--definition,
+.syntax--source.syntax--sass .syntax--variable-declaration .syntax--variable,
+.syntax--source.syntax--sass .syntax--variable-usage .syntax--variable {
+  color: #fa4747;
+}
+.syntax--source.syntax--sass .syntax--function.syntax--include .syntax--variable {
+  color: #fbff94;
+}
+.syntax--source.syntax--sass .syntax--mixin .syntax--variable {
+  color: #fbff94;
+}
+.syntax--source.syntax--sass .syntax--mixin .syntax--variable-declaration .syntax--punctuation.syntax--definition,
+.syntax--source.syntax--sass .syntax--mixin .syntax--variable-usage .syntax--punctuation.syntax--definition,
+.syntax--source.syntax--sass .syntax--mixin .syntax--variable-declaration .syntax--variable,
+.syntax--source.syntax--sass .syntax--mixin .syntax--variable-usage .syntax--variable {
+  color: #fa4747;
+}
+.syntax--source.syntax--scss .syntax--variable {
+  color: #fa4747;
+}
+.syntax--source.syntax--scss .syntax--variable.syntax--definition .syntax--punctuation.syntax--separator {
+  color: #7291cf;
+}
+.syntax--yaml .syntax--entity.syntax--name.syntax--tag {
+  color: #fbff94;
+}
+</style>
+  </head>
+  <body class='markdown-preview' data-use-github-style><h1 id="how-to-scala">How to Scala</h1>
+<h3 id="by-joan-chirinos">by Joan Chirinos</h3>
+<h2 id="history-of-scala">History of Scala</h2>
+<ul>
+<li>Scala is a relatively new language</li>
+<li>‘Twas designed in 2001 by Martin Odersky at École Polytechnique Fédérale de Lausanne (Switzerland)</li>
+<li>In late 2003ish, it was released on the Java platform (runs in the JVM I believe) and on .NET (Microsoft thing) in 2004</li>
+<li>Version 2.0 was released in 2006</li>
+<li>Finally, the Scala team won a 5 year research grant in 2011</li>
+</ul>
+<h2 id="what-is-scala">What is Scala</h2>
+<ul>
+<li>General purpose, high-level language with strong static typing</li>
+<li>Supports functional programming and OOP</li>
+<li>It was meant to be Java but better (is it? We’ll see…)</li>
+<li>Lazy evaluation</li>
+<li>Operator overloading</li>
+<li>Does not have checked exceptions<ul>
+<li>In Java, if a method could throw certain exceptions (let’s say IOException), it must be declared in the signature<ul>
+<li>e.g. <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">public static void foo() throws IOException { //code }</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="why-should-i-use-scala-over-java-">Why should I use Scala over Java?</h2>
+<ul>
+<li>Scala is more syntactically flexible<ul>
+<li>One of the more useful bois is that Scala recognizes squiggly braces as parameter lists. This can help split some params from others, and allows for better multiline parameters</li>
+</ul>
+</li>
+<li>Unified type system<ul>
+<li>Everything, including value types like int and boolean, inherit class ‘Any’. You can also define new value types</li>
+</ul>
+</li>
+<li>for-expressions rather than foreach loops<ul>
+<li>This allows for handy dandy list comprehension-type things!</li>
+</ul>
+</li>
+<li>It’s very functional (haha get it?)<ul>
+<li>Everything is an expression (every statement returns something)</li>
+</ul>
+</li>
+</ul>
+<h2 id="how-does-it-compare-to-the-other-jvm-languages-clojure-groovy-">How does it compare to the other JVM languages (Clojure, Groovy)</h2>
+<ul>
+<li>Scala is typically compared with Clojure and Groovy.</li>
+<li>Clojure and Groovy are both dynamically typed</li>
+<li>Groovy is strongly object oriented, and it aims to reduce verbosity</li>
+<li>Clojure is more strongly functional</li>
+<li>Scala is a happy (albeit weird and—at times–a slightly difficult marriage of the two)</li>
+<li>Learning Scala can be hard because of the various advanced features (which I likely will not delve too deep into)</li>
+</ul>
+<h2 id="hello-world-">Hello world!</h2>
+<pre class="editor-colors lang-scala"><div class="line"><span class="syntax--source syntax--scala"><span class="syntax--keyword syntax--declaration syntax--scala">object</span> <span class="syntax--entity syntax--name syntax--class syntax--declaration">HelloWorld</span> <span class="syntax--meta syntax--bracket syntax--scala">{</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--keyword syntax--declaration syntax--scala">def</span> <span class="syntax--entity syntax--name syntax--function syntax--declaration">main</span><span class="syntax--meta syntax--bracket syntax--scala">(</span><span class="syntax--variable syntax--parameter syntax--scala">args</span><span class="syntax--meta syntax--colon syntax--scala">:</span> <span class="syntax--entity syntax--name syntax--class">Array</span><span class="syntax--scala syntax--type"><span class="syntax--bracket syntax--type syntax--scala">[</span><span class="syntax--class">String</span>]</span>)<span class="syntax--keyword syntax--operator syntax--scala">:</span> <span class="syntax--storage syntax--type syntax--primitive syntax--scala">Unit</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--scala">=</span> <span class="syntax--meta syntax--bracket syntax--scala">{</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">    </span>println<span class="syntax--meta syntax--bracket syntax--scala">(</span><span class="syntax--string syntax--quoted syntax--double syntax--scala"><span class="syntax--punctuation syntax--definition syntax--string syntax--begin syntax--scala">"</span>Hello, world!<span class="syntax--punctuation syntax--definition syntax--string syntax--end syntax--scala">"</span></span><span class="syntax--meta syntax--bracket syntax--scala">)</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--meta syntax--bracket syntax--scala">}</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="syntax--meta syntax--bracket syntax--scala">}</span></span></div></pre>
+<p>Here is a "Hello, world" program in Scala. I will break it into parts and explain it</p>
+<ul>
+<li><code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">object HelloWorld</code> is similar to writing a class in Java</li>
+<li><code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">def main(args: Array[String]): Unit = {...}</code> reads as "define the method <em>main</em> which has a single argument, <em>args</em>, defined as an Array of Strings. This method returns Unit. Unit is similar to <em>void</em> in other languages (Java, C, etc.)</li>
+<li><code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">println("Hello, world!")</code> tells the program to print <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">"Hello, world!"</code> then a new-line character onto the terminal</li>
+</ul>
+<h2 id="general-scala-demo-">General Scala Demo!</h2>
+<pre class="editor-colors lang-scala"><div class="line"><span class="syntax--source syntax--scala"><span class="syntax--keyword syntax--declaration syntax--scala">object</span> <span class="syntax--entity syntax--name syntax--class syntax--declaration">GeneralDemo</span> <span class="syntax--meta syntax--bracket syntax--scala">{</span></span></div></pre>
+<pre class="editor-colors lang-scala"><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--comment syntax--line syntax--double-slash syntax--scala"><span class="syntax--punctuation syntax--definition syntax--comment syntax--scala">//</span> we can define functions inside functions for nice recursion</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--comment syntax--line syntax--double-slash syntax--scala"><span class="syntax--punctuation syntax--definition syntax--comment syntax--scala">//</span> here, we define factorial with a loopy recursive fxn inside</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--keyword syntax--declaration syntax--scala">def</span> <span class="syntax--entity syntax--name syntax--function syntax--declaration">factorial</span><span class="syntax--meta syntax--bracket syntax--scala">(</span>n<span class="syntax--keyword syntax--operator syntax--scala">:</span> <span class="syntax--storage syntax--type syntax--primitive syntax--scala">Int</span>)<span class="syntax--keyword syntax--operator syntax--scala">:</span> <span class="syntax--storage syntax--type syntax--primitive syntax--scala">Int</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--scala">=</span> <span class="syntax--meta syntax--bracket syntax--scala">{</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">    </span><span class="syntax--keyword syntax--declaration syntax--scala">def</span> <span class="syntax--entity syntax--name syntax--function syntax--declaration">go</span><span class="syntax--meta syntax--bracket syntax--scala">(</span>n<span class="syntax--keyword syntax--operator syntax--scala">:</span> <span class="syntax--storage syntax--type syntax--primitive syntax--scala">Int</span>, <span class="syntax--variable syntax--parameter syntax--scala">acc</span><span class="syntax--meta syntax--colon syntax--scala">:</span> <span class="syntax--storage syntax--type syntax--primitive syntax--scala">Int</span>)<span class="syntax--keyword syntax--operator syntax--scala">:</span> <span class="syntax--storage syntax--type syntax--primitive syntax--scala">Int</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--scala">=</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">      </span><span class="syntax--keyword syntax--control syntax--flow syntax--scala">if</span> <span class="syntax--meta syntax--bracket syntax--scala">(</span>n &lt;= <span class="syntax--constant syntax--numeric syntax--scala">0</span><span class="syntax--meta syntax--bracket syntax--scala">)</span> acc</span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">      </span><span class="syntax--keyword syntax--control syntax--flow syntax--scala">else</span> go<span class="syntax--meta syntax--bracket syntax--scala">(</span>n-<span class="syntax--constant syntax--numeric syntax--scala">1</span>, n*acc<span class="syntax--meta syntax--bracket syntax--scala">)</span></span></div><div class="line"></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">    </span>go<span class="syntax--meta syntax--bracket syntax--scala">(</span>n, <span class="syntax--constant syntax--numeric syntax--scala">1</span><span class="syntax--meta syntax--bracket syntax--scala">)</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--meta syntax--bracket syntax--scala">}</span></span></div></pre>
+<p>Defining a function within another function leads to nice recursion without messing up the larger namespace</p>
+<pre class="editor-colors lang-scala"><div class="line"><span class="syntax--source syntax--scala"></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--comment syntax--line syntax--double-slash syntax--scala"><span class="syntax--punctuation syntax--definition syntax--comment syntax--scala">//</span> now here we print a formatted factorial statement thing</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--keyword syntax--declaration syntax--scala">def</span> <span class="syntax--entity syntax--name syntax--function syntax--declaration">formatFactorial</span><span class="syntax--meta syntax--bracket syntax--scala">(</span>n<span class="syntax--keyword syntax--operator syntax--scala">:</span> <span class="syntax--storage syntax--type syntax--primitive syntax--scala">Int</span>)<span class="syntax--keyword syntax--operator syntax--scala">:</span> <span class="syntax--storage syntax--type syntax--scala">String</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--scala">=</span> <span class="syntax--meta syntax--bracket syntax--scala">{</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">    </span><span class="syntax--keyword syntax--declaration syntax--stable syntax--scala">val</span> <span class="syntax--entity syntax--name syntax--val syntax--declaration">msg</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--scala">=</span> <span class="syntax--string syntax--quoted syntax--double syntax--scala"><span class="syntax--punctuation syntax--definition syntax--string syntax--begin syntax--scala">"</span>The factorial of %d is %d.<span class="syntax--punctuation syntax--definition syntax--string syntax--end syntax--scala">"</span></span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">    </span>msg.format<span class="syntax--meta syntax--bracket syntax--scala">(</span>n, factorial<span class="syntax--meta syntax--bracket syntax--scala">(</span>n<span class="syntax--meta syntax--bracket syntax--scala">)</span><span class="syntax--meta syntax--bracket syntax--scala">)</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--meta syntax--bracket syntax--scala">}</span></span></div></pre>
+<p>Here we see that we can easily format strings to print out the results of some function</p>
+<pre class="editor-colors lang-scala"><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--comment syntax--line syntax--double-slash syntax--scala"><span class="syntax--punctuation syntax--definition syntax--comment syntax--scala">//</span> we can also define something like the fib sequence like this</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--keyword syntax--declaration syntax--scala">def</span> <span class="syntax--entity syntax--name syntax--function syntax--declaration">fib</span><span class="syntax--meta syntax--bracket syntax--scala">(</span>n<span class="syntax--keyword syntax--operator syntax--scala">:</span> <span class="syntax--storage syntax--type syntax--primitive syntax--scala">Int</span>)<span class="syntax--keyword syntax--operator syntax--scala">:</span> <span class="syntax--storage syntax--type syntax--primitive syntax--scala">Int</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--scala">=</span> <span class="syntax--meta syntax--bracket syntax--scala">{</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">    </span><span class="syntax--keyword syntax--declaration syntax--scala">def</span> <span class="syntax--entity syntax--name syntax--function syntax--declaration">loop</span><span class="syntax--meta syntax--bracket syntax--scala">(</span>n<span class="syntax--keyword syntax--operator syntax--scala">:</span> <span class="syntax--storage syntax--type syntax--primitive syntax--scala">Int</span>, <span class="syntax--variable syntax--parameter syntax--scala">prev</span><span class="syntax--meta syntax--colon syntax--scala">:</span> <span class="syntax--storage syntax--type syntax--primitive syntax--scala">Int</span>, <span class="syntax--variable syntax--parameter syntax--scala">cur</span><span class="syntax--meta syntax--colon syntax--scala">:</span> <span class="syntax--storage syntax--type syntax--primitive syntax--scala">Int</span>)<span class="syntax--keyword syntax--operator syntax--scala">:</span> <span class="syntax--storage syntax--type syntax--primitive syntax--scala">Int</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--scala">=</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">      </span><span class="syntax--keyword syntax--control syntax--flow syntax--scala">if</span> <span class="syntax--meta syntax--bracket syntax--scala">(</span>n == <span class="syntax--constant syntax--numeric syntax--scala">0</span><span class="syntax--meta syntax--bracket syntax--scala">)</span> prev</span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">      </span><span class="syntax--keyword syntax--control syntax--flow syntax--scala">else</span> loop<span class="syntax--meta syntax--bracket syntax--scala">(</span>n - <span class="syntax--constant syntax--numeric syntax--scala">1</span>, cur, prev + cur<span class="syntax--meta syntax--bracket syntax--scala">)</span></span></div><div class="line"></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">    </span>loop<span class="syntax--meta syntax--bracket syntax--scala">(</span>n, <span class="syntax--constant syntax--numeric syntax--scala">0</span>, <span class="syntax--constant syntax--numeric syntax--scala">1</span><span class="syntax--meta syntax--bracket syntax--scala">)</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--meta syntax--bracket syntax--scala">}</span></span></div></pre>
+<p>Here is another instance of nice recursion to generate meaningful values</p>
+<pre class="editor-colors lang-scala"><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--comment syntax--line syntax--double-slash syntax--scala"><span class="syntax--punctuation syntax--definition syntax--comment syntax--scala">//</span> now we wanna print this too. We can make a more general print function</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--comment syntax--line syntax--double-slash syntax--scala"><span class="syntax--punctuation syntax--definition syntax--comment syntax--scala">//</span> like so</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--comment syntax--line syntax--double-slash syntax--scala"><span class="syntax--punctuation syntax--definition syntax--comment syntax--scala">//</span> This takes a function name, an int, and a function</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--keyword syntax--declaration syntax--scala">def</span> <span class="syntax--entity syntax--name syntax--function syntax--declaration">formatResult</span><span class="syntax--meta syntax--bracket syntax--scala">(</span><span class="syntax--variable syntax--parameter syntax--scala">name</span><span class="syntax--meta syntax--colon syntax--scala">:</span> <span class="syntax--storage syntax--type syntax--scala">String</span>, n<span class="syntax--keyword syntax--operator syntax--scala">:</span> <span class="syntax--storage syntax--type syntax--primitive syntax--scala">Int</span>, f<span class="syntax--keyword syntax--operator syntax--scala">:</span> <span class="syntax--storage syntax--type syntax--primitive syntax--scala">Int</span> <span class="syntax--keyword syntax--operator syntax--scala">=&gt;</span> <span class="syntax--storage syntax--type syntax--primitive syntax--scala">Int</span><span class="syntax--meta syntax--bracket syntax--scala">)</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--scala">=</span> <span class="syntax--meta syntax--bracket syntax--scala">{</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">    </span><span class="syntax--keyword syntax--declaration syntax--stable syntax--scala">val</span> <span class="syntax--entity syntax--name syntax--val syntax--declaration">msg</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--scala">=</span> <span class="syntax--string syntax--quoted syntax--double syntax--scala"><span class="syntax--punctuation syntax--definition syntax--string syntax--begin syntax--scala">"</span>The %s of %d is %d.<span class="syntax--punctuation syntax--definition syntax--string syntax--end syntax--scala">"</span></span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">    </span>msg.format<span class="syntax--meta syntax--bracket syntax--scala">(</span>name, n, f<span class="syntax--meta syntax--bracket syntax--scala">(</span>n<span class="syntax--meta syntax--bracket syntax--scala">)</span><span class="syntax--meta syntax--bracket syntax--scala">)</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--meta syntax--bracket syntax--scala">}</span></span></div></pre>
+<p>Here it gets cool! We can give a function as an argument to make a multi-purpose print function. This defines the variable <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">f</code> as a function which takes an <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">Int</code> and returns an <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">Int</code></p>
+<pre class="editor-colors lang-scala"><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--comment syntax--line syntax--double-slash syntax--scala"><span class="syntax--punctuation syntax--definition syntax--comment syntax--scala">//</span> let's see some polymorphism!</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--comment syntax--line syntax--double-slash syntax--scala"><span class="syntax--punctuation syntax--definition syntax--comment syntax--scala">//</span> Find first element x of type A in an array of As</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--comment syntax--line syntax--double-slash syntax--scala"><span class="syntax--punctuation syntax--definition syntax--comment syntax--scala">//</span> In english, this is:</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--comment syntax--line syntax--double-slash syntax--scala"><span class="syntax--punctuation syntax--definition syntax--comment syntax--scala">//</span> polyFindFirst[generic A](</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--comment syntax--line syntax--double-slash syntax--scala"><span class="syntax--punctuation syntax--definition syntax--comment syntax--scala">//</span>    arr: array of type A, p: equality fxn for value we're looking for</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--comment syntax--line syntax--double-slash syntax--scala"><span class="syntax--punctuation syntax--definition syntax--comment syntax--scala">//</span> )</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--keyword syntax--declaration syntax--scala">def</span> <span class="syntax--entity syntax--name syntax--function syntax--declaration">polyFindFirst</span><span class="syntax--scala syntax--type"><span class="syntax--bracket syntax--type syntax--scala">[</span><span class="syntax--class">A</span>]</span><span class="syntax--meta syntax--bracket syntax--scala">(</span><span class="syntax--variable syntax--parameter syntax--scala">arr</span><span class="syntax--meta syntax--colon syntax--scala">:</span> <span class="syntax--entity syntax--name syntax--class">Array</span><span class="syntax--scala syntax--type"><span class="syntax--bracket syntax--type syntax--scala">[</span><span class="syntax--class">A</span>]</span>, p<span class="syntax--keyword syntax--operator syntax--scala">:</span> <span class="syntax--entity syntax--name syntax--class">A</span> <span class="syntax--keyword syntax--operator syntax--scala">=&gt;</span> <span class="syntax--storage syntax--type syntax--primitive syntax--scala">Boolean</span>)<span class="syntax--keyword syntax--operator syntax--scala">:</span> <span class="syntax--storage syntax--type syntax--primitive syntax--scala">Int</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--scala">=</span> <span class="syntax--meta syntax--bracket syntax--scala">{</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">    </span><span class="syntax--keyword syntax--declaration syntax--scala">def</span> <span class="syntax--entity syntax--name syntax--function syntax--declaration">loop</span><span class="syntax--meta syntax--bracket syntax--scala">(</span>n<span class="syntax--keyword syntax--operator syntax--scala">:</span> <span class="syntax--storage syntax--type syntax--primitive syntax--scala">Int</span>)<span class="syntax--keyword syntax--operator syntax--scala">:</span> <span class="syntax--storage syntax--type syntax--primitive syntax--scala">Int</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--scala">=</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">      </span><span class="syntax--keyword syntax--control syntax--flow syntax--scala">if</span> <span class="syntax--meta syntax--bracket syntax--scala">(</span>n &gt;= arr.length<span class="syntax--meta syntax--bracket syntax--scala">)</span> -<span class="syntax--constant syntax--numeric syntax--scala">1</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">      </span><span class="syntax--keyword syntax--control syntax--flow syntax--scala">else</span> <span class="syntax--keyword syntax--control syntax--flow syntax--scala">if</span> <span class="syntax--meta syntax--bracket syntax--scala">(</span>p<span class="syntax--meta syntax--bracket syntax--scala">(</span>arr<span class="syntax--meta syntax--bracket syntax--scala">(</span>n<span class="syntax--meta syntax--bracket syntax--scala">)</span><span class="syntax--meta syntax--bracket syntax--scala">)</span><span class="syntax--meta syntax--bracket syntax--scala">)</span> n</span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">      </span><span class="syntax--keyword syntax--control syntax--flow syntax--scala">else</span> loop<span class="syntax--meta syntax--bracket syntax--scala">(</span>n + <span class="syntax--constant syntax--numeric syntax--scala">1</span><span class="syntax--meta syntax--bracket syntax--scala">)</span></span></div><div class="line"></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">    </span>loop<span class="syntax--meta syntax--bracket syntax--scala">(</span><span class="syntax--constant syntax--numeric syntax--scala">0</span><span class="syntax--meta syntax--bracket syntax--scala">)</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--meta syntax--bracket syntax--scala">}</span></span></div></pre>
+<p>This is Scala's way of doing polymorphism. We also see another example of giving a function as an argument, defining variable <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">p</code> as a function which takes an element of type <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">A</code> and returns a <code style="font-family: &quot;Anonymous Pro&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">Boolean</code></p>
+<pre class="editor-colors lang-scala"><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--comment syntax--line syntax--double-slash syntax--scala"><span class="syntax--punctuation syntax--definition syntax--comment syntax--scala">//</span> function to check if array of As is sorted given a &gt; fxn</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--keyword syntax--declaration syntax--scala">def</span> <span class="syntax--entity syntax--name syntax--function syntax--declaration">isSorted</span><span class="syntax--scala syntax--type"><span class="syntax--bracket syntax--type syntax--scala">[</span><span class="syntax--class">A</span>]</span><span class="syntax--meta syntax--bracket syntax--scala">(</span><span class="syntax--variable syntax--parameter syntax--scala">arr</span><span class="syntax--meta syntax--colon syntax--scala">:</span> <span class="syntax--entity syntax--name syntax--class">Array</span><span class="syntax--scala syntax--type"><span class="syntax--bracket syntax--type syntax--scala">[</span><span class="syntax--class">A</span>]</span>, <span class="syntax--variable syntax--parameter syntax--scala">gt</span><span class="syntax--meta syntax--colon syntax--scala">:</span> <span class="syntax--meta syntax--bracket syntax--scala">(</span><span class="syntax--entity syntax--name syntax--class">A</span>, <span class="syntax--entity syntax--name syntax--class">A</span><span class="syntax--meta syntax--bracket syntax--scala">)</span> <span class="syntax--keyword syntax--operator syntax--scala">=&gt;</span> <span class="syntax--storage syntax--type syntax--primitive syntax--scala">Boolean</span>)<span class="syntax--keyword syntax--operator syntax--scala">:</span> <span class="syntax--storage syntax--type syntax--primitive syntax--scala">Boolean</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--scala">=</span> <span class="syntax--meta syntax--bracket syntax--scala">{</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">    </span><span class="syntax--keyword syntax--declaration syntax--scala">def</span> <span class="syntax--entity syntax--name syntax--function syntax--declaration">loop</span><span class="syntax--meta syntax--bracket syntax--scala">(</span>n<span class="syntax--keyword syntax--operator syntax--scala">:</span> <span class="syntax--storage syntax--type syntax--primitive syntax--scala">Int</span>)<span class="syntax--keyword syntax--operator syntax--scala">:</span> <span class="syntax--storage syntax--type syntax--primitive syntax--scala">Boolean</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--scala">=</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">      </span><span class="syntax--keyword syntax--control syntax--flow syntax--scala">if</span> <span class="syntax--meta syntax--bracket syntax--scala">(</span>n &gt;= arr.length - <span class="syntax--constant syntax--numeric syntax--scala">1</span><span class="syntax--meta syntax--bracket syntax--scala">)</span> <span class="syntax--constant syntax--language syntax--scala">true</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">      </span><span class="syntax--keyword syntax--control syntax--flow syntax--scala">else</span> <span class="syntax--keyword syntax--control syntax--flow syntax--scala">if</span> <span class="syntax--meta syntax--bracket syntax--scala">(</span>gt<span class="syntax--meta syntax--bracket syntax--scala">(</span>arr<span class="syntax--meta syntax--bracket syntax--scala">(</span>n<span class="syntax--meta syntax--bracket syntax--scala">)</span>, arr<span class="syntax--meta syntax--bracket syntax--scala">(</span>n+<span class="syntax--constant syntax--numeric syntax--scala">1</span><span class="syntax--meta syntax--bracket syntax--scala">)</span><span class="syntax--meta syntax--bracket syntax--scala">)</span><span class="syntax--meta syntax--bracket syntax--scala">)</span> <span class="syntax--constant syntax--language syntax--scala">false</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">      </span><span class="syntax--keyword syntax--control syntax--flow syntax--scala">else</span> loop<span class="syntax--meta syntax--bracket syntax--scala">(</span>n+<span class="syntax--constant syntax--numeric syntax--scala">1</span><span class="syntax--meta syntax--bracket syntax--scala">)</span></span></div><div class="line"></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">    </span>loop<span class="syntax--meta syntax--bracket syntax--scala">(</span><span class="syntax--constant syntax--numeric syntax--scala">0</span><span class="syntax--meta syntax--bracket syntax--scala">)</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--meta syntax--bracket syntax--scala">}</span></span></div><div class="line"></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--keyword syntax--declaration syntax--scala">def</span> <span class="syntax--entity syntax--name syntax--function syntax--declaration">formatArr</span><span class="syntax--scala syntax--type"><span class="syntax--bracket syntax--type syntax--scala">[</span><span class="syntax--class">A</span>]</span><span class="syntax--meta syntax--bracket syntax--scala">(</span><span class="syntax--variable syntax--parameter syntax--scala">arr</span><span class="syntax--meta syntax--colon syntax--scala">:</span> <span class="syntax--entity syntax--name syntax--class">Array</span><span class="syntax--scala syntax--type"><span class="syntax--bracket syntax--type syntax--scala">[</span><span class="syntax--class">A</span>]</span>)<span class="syntax--keyword syntax--operator syntax--scala">:</span> <span class="syntax--storage syntax--type syntax--scala">String</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--scala">=</span> <span class="syntax--meta syntax--bracket syntax--scala">{</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">    </span><span class="syntax--keyword syntax--declaration syntax--scala">def</span> <span class="syntax--entity syntax--name syntax--function syntax--declaration">loop</span><span class="syntax--meta syntax--bracket syntax--scala">(</span>n<span class="syntax--keyword syntax--operator syntax--scala">:</span> <span class="syntax--storage syntax--type syntax--primitive syntax--scala">Int</span>)<span class="syntax--keyword syntax--operator syntax--scala">:</span> <span class="syntax--storage syntax--type syntax--scala">String</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--scala">=</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">      </span><span class="syntax--keyword syntax--control syntax--flow syntax--scala">if</span> <span class="syntax--meta syntax--bracket syntax--scala">(</span>n &gt;= arr.length<span class="syntax--meta syntax--bracket syntax--scala">)</span> <span class="syntax--string syntax--quoted syntax--double syntax--scala"><span class="syntax--punctuation syntax--definition syntax--string syntax--begin syntax--scala">"</span><span class="syntax--punctuation syntax--definition syntax--string syntax--end syntax--scala">"</span></span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">      </span><span class="syntax--keyword syntax--control syntax--flow syntax--scala">else</span> <span class="syntax--meta syntax--bracket syntax--scala">{</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">        </span><span class="syntax--keyword syntax--declaration syntax--stable syntax--scala">val</span> <span class="syntax--entity syntax--name syntax--val syntax--declaration">msg</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--scala">=</span> <span class="syntax--string syntax--quoted syntax--double syntax--scala"><span class="syntax--punctuation syntax--definition syntax--string syntax--begin syntax--scala">"</span>%s, %s<span class="syntax--punctuation syntax--definition syntax--string syntax--end syntax--scala">"</span></span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">        </span>msg.format<span class="syntax--meta syntax--bracket syntax--scala">(</span>arr<span class="syntax--meta syntax--bracket syntax--scala">(</span>n<span class="syntax--meta syntax--bracket syntax--scala">)</span>.toString, loop<span class="syntax--meta syntax--bracket syntax--scala">(</span>n+<span class="syntax--constant syntax--numeric syntax--scala">1</span><span class="syntax--meta syntax--bracket syntax--scala">)</span><span class="syntax--meta syntax--bracket syntax--scala">)</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">      </span><span class="syntax--meta syntax--bracket syntax--scala">}</span></span></div><div class="line"></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">    </span>loop<span class="syntax--meta syntax--bracket syntax--scala">(</span><span class="syntax--constant syntax--numeric syntax--scala">0</span><span class="syntax--meta syntax--bracket syntax--scala">)</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--meta syntax--bracket syntax--scala">}</span></span></div><div class="line"></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--keyword syntax--declaration syntax--scala">def</span> <span class="syntax--entity syntax--name syntax--function syntax--declaration">formatSort</span><span class="syntax--scala syntax--type"><span class="syntax--bracket syntax--type syntax--scala">[</span><span class="syntax--class">A</span>]</span><span class="syntax--meta syntax--bracket syntax--scala">(</span><span class="syntax--variable syntax--parameter syntax--scala">arr</span><span class="syntax--meta syntax--colon syntax--scala">:</span> <span class="syntax--entity syntax--name syntax--class">Array</span><span class="syntax--scala syntax--type"><span class="syntax--bracket syntax--type syntax--scala">[</span><span class="syntax--class">A</span>]</span>, <span class="syntax--variable syntax--parameter syntax--scala">gt</span><span class="syntax--meta syntax--colon syntax--scala">:</span> <span class="syntax--meta syntax--bracket syntax--scala">(</span><span class="syntax--entity syntax--name syntax--class">A</span>, <span class="syntax--entity syntax--name syntax--class">A</span><span class="syntax--meta syntax--bracket syntax--scala">)</span> <span class="syntax--keyword syntax--operator syntax--scala">=&gt;</span> <span class="syntax--storage syntax--type syntax--primitive syntax--scala">Boolean</span>)<span class="syntax--keyword syntax--operator syntax--scala">:</span> <span class="syntax--storage syntax--type syntax--scala">String</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--scala">=</span> <span class="syntax--meta syntax--bracket syntax--scala">{</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">    </span><span class="syntax--keyword syntax--declaration syntax--stable syntax--scala">val</span> <span class="syntax--entity syntax--name syntax--val syntax--declaration">msg</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--scala">=</span> <span class="syntax--string syntax--quoted syntax--double syntax--scala"><span class="syntax--punctuation syntax--definition syntax--string syntax--begin syntax--scala">"</span>%s is sorted: %b<span class="syntax--punctuation syntax--definition syntax--string syntax--end syntax--scala">"</span></span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">    </span>msg.format<span class="syntax--meta syntax--bracket syntax--scala">(</span>formatArr<span class="syntax--meta syntax--bracket syntax--scala">(</span>arr<span class="syntax--meta syntax--bracket syntax--scala">)</span>, isSorted<span class="syntax--meta syntax--bracket syntax--scala">(</span>arr, gt<span class="syntax--meta syntax--bracket syntax--scala">)</span><span class="syntax--meta syntax--bracket syntax--scala">)</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--meta syntax--bracket syntax--scala">}</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="syntax--meta syntax--bracket syntax--scala">}</span></span></div></pre>
+<p>Here there are just a couple more examples of basic functional programming capabilities in Scala, along with nice recursion</p>
+<h2 id="scala-vs-java-demo">Scala vs. Java Demo</h2>
+<p>Scala can make some code very clean and short. Here, we take some sorting algorithms as examples.</p>
+<h3 id="quicksort">Quicksort</h3>
+<p>Here is quicksort implemented in Scala</p>
+<pre class="editor-colors lang-scala"><div class="line"><span class="syntax--source syntax--scala"><span class="syntax--keyword syntax--declaration syntax--scala">def</span> <span class="syntax--entity syntax--name syntax--function syntax--declaration">quicksort</span><span class="syntax--meta syntax--bracket syntax--scala">(</span><span class="syntax--variable syntax--parameter syntax--scala">arr</span><span class="syntax--meta syntax--colon syntax--scala">:</span> <span class="syntax--entity syntax--name syntax--class">List</span><span class="syntax--scala syntax--type"><span class="syntax--bracket syntax--type syntax--scala">[</span><span class="syntax--class">Int</span>]</span>)<span class="syntax--keyword syntax--operator syntax--scala">:</span> <span class="syntax--entity syntax--name syntax--class">List</span><span class="syntax--scala syntax--type"><span class="syntax--bracket syntax--type syntax--scala">[</span><span class="syntax--class">Int</span>]</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--scala">=</span> <span class="syntax--meta syntax--bracket syntax--scala">{</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--keyword syntax--control syntax--flow syntax--scala">if</span> <span class="syntax--meta syntax--bracket syntax--scala">(</span>arr.length &lt;= <span class="syntax--constant syntax--numeric syntax--scala">1</span><span class="syntax--meta syntax--bracket syntax--scala">)</span> arr</span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--keyword syntax--control syntax--flow syntax--scala">else</span> <span class="syntax--meta syntax--bracket syntax--scala">{</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">    </span><span class="syntax--keyword syntax--declaration syntax--stable syntax--scala">val</span> <span class="syntax--entity syntax--name syntax--val syntax--declaration">pivot</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--scala">=</span> arr<span class="syntax--meta syntax--bracket syntax--scala">(</span>arr.length / <span class="syntax--constant syntax--numeric syntax--scala">2</span><span class="syntax--meta syntax--bracket syntax--scala">)</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">    </span>quicksort<span class="syntax--meta syntax--bracket syntax--scala">(</span>arr.filter<span class="syntax--meta syntax--bracket syntax--scala">(</span>_ &lt; pivot<span class="syntax--meta syntax--bracket syntax--scala">)</span><span class="syntax--meta syntax--bracket syntax--scala">)</span> <span class="syntax--keyword syntax--operator syntax--scala">:::</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">      </span>arr.filter<span class="syntax--meta syntax--bracket syntax--scala">(</span>_ == pivot<span class="syntax--meta syntax--bracket syntax--scala">)</span> <span class="syntax--keyword syntax--operator syntax--scala">:::</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">      </span>quicksort<span class="syntax--meta syntax--bracket syntax--scala">(</span>arr.filter<span class="syntax--meta syntax--bracket syntax--scala">(</span>_ &gt; pivot<span class="syntax--meta syntax--bracket syntax--scala">)</span><span class="syntax--meta syntax--bracket syntax--scala">)</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--meta syntax--bracket syntax--scala">}</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="syntax--meta syntax--bracket syntax--scala">}</span></span></div></pre>
+<p>And here it's implemented in Java</p>
+<pre class="editor-colors lang-java"><div class="line"><span class="syntax--source syntax--java"><span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> <span class="syntax--meta syntax--function-call syntax--java"><span class="syntax--entity syntax--name syntax--function syntax--java">partition</span><span class="syntax--punctuation syntax--definition syntax--parameters syntax--begin syntax--bracket syntax--round syntax--java">(</span><span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> arr<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span><span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span><span class="syntax--punctuation syntax--separator syntax--delimiter syntax--java">,</span> <span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> low<span class="syntax--punctuation syntax--separator syntax--delimiter syntax--java">,</span> <span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> high<span class="syntax--punctuation syntax--definition syntax--parameters syntax--end syntax--bracket syntax--round syntax--java">)</span></span> <span class="syntax--punctuation syntax--section syntax--block syntax--begin syntax--bracket syntax--curly syntax--java">{</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">  </span><span class="syntax--meta syntax--definition syntax--variable syntax--java"><span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> <span class="syntax--variable syntax--other syntax--definition syntax--java">pivot</span> </span><span class="syntax--keyword syntax--operator syntax--assignment syntax--java">=</span> arr<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span>high<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">  </span><span class="syntax--meta syntax--definition syntax--variable syntax--java"><span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> <span class="syntax--variable syntax--other syntax--definition syntax--java">i</span> </span><span class="syntax--keyword syntax--operator syntax--assignment syntax--java">=</span> <span class="syntax--punctuation syntax--bracket syntax--round syntax--java">(</span>low<span class="syntax--keyword syntax--operator syntax--arithmetic syntax--java">-</span><span class="syntax--constant syntax--numeric syntax--decimal syntax--java">1</span><span class="syntax--punctuation syntax--bracket syntax--round syntax--java">)</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span> <span class="syntax--comment syntax--line syntax--double-slash syntax--java"><span class="syntax--punctuation syntax--definition syntax--comment syntax--java">//</span> index of smaller element</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">  </span><span class="syntax--keyword syntax--control syntax--java">for</span> <span class="syntax--punctuation syntax--bracket syntax--round syntax--java">(</span><span class="syntax--meta syntax--definition syntax--variable syntax--java"><span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> <span class="syntax--variable syntax--other syntax--definition syntax--java">j</span></span><span class="syntax--keyword syntax--operator syntax--assignment syntax--java">=</span>low<span class="syntax--punctuation syntax--terminator syntax--java">;</span> j<span class="syntax--keyword syntax--operator syntax--comparison syntax--java">&lt;</span>high<span class="syntax--punctuation syntax--terminator syntax--java">;</span> j<span class="syntax--keyword syntax--operator syntax--increment-decrement syntax--java">++</span><span class="syntax--punctuation syntax--bracket syntax--round syntax--java">)</span> <span class="syntax--punctuation syntax--section syntax--block syntax--begin syntax--bracket syntax--curly syntax--java">{</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">    </span><span class="syntax--keyword syntax--control syntax--java">if</span> <span class="syntax--punctuation syntax--bracket syntax--round syntax--java">(</span>arr<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span>j<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span> <span class="syntax--keyword syntax--operator syntax--comparison syntax--java">&lt;=</span> pivot<span class="syntax--punctuation syntax--bracket syntax--round syntax--java">)</span> <span class="syntax--punctuation syntax--section syntax--block syntax--begin syntax--bracket syntax--curly syntax--java">{</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">      </span>i<span class="syntax--keyword syntax--operator syntax--increment-decrement syntax--java">++</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">      </span><span class="syntax--meta syntax--definition syntax--variable syntax--java"><span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> <span class="syntax--variable syntax--other syntax--definition syntax--java">temp</span> </span><span class="syntax--keyword syntax--operator syntax--assignment syntax--java">=</span> arr<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span>i<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">      </span>arr<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span>i<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--java">=</span> arr<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span>j<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">      </span>arr<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span>j<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--java">=</span> temp<span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">    </span><span class="syntax--punctuation syntax--section syntax--block syntax--end syntax--bracket syntax--curly syntax--java">}</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">  </span><span class="syntax--punctuation syntax--section syntax--block syntax--end syntax--bracket syntax--curly syntax--java">}</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">  </span><span class="syntax--meta syntax--definition syntax--variable syntax--java"><span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> <span class="syntax--variable syntax--other syntax--definition syntax--java">temp</span> </span><span class="syntax--keyword syntax--operator syntax--assignment syntax--java">=</span> arr<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span>i<span class="syntax--keyword syntax--operator syntax--arithmetic syntax--java">+</span><span class="syntax--constant syntax--numeric syntax--decimal syntax--java">1</span><span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">  </span>arr<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span>i<span class="syntax--keyword syntax--operator syntax--arithmetic syntax--java">+</span><span class="syntax--constant syntax--numeric syntax--decimal syntax--java">1</span><span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--java">=</span> arr<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span>high<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">  </span>arr<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span>high<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--java">=</span> temp<span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">  </span><span class="syntax--keyword syntax--control syntax--java">return</span> i<span class="syntax--keyword syntax--operator syntax--arithmetic syntax--java">+</span><span class="syntax--constant syntax--numeric syntax--decimal syntax--java">1</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="syntax--punctuation syntax--section syntax--block syntax--end syntax--bracket syntax--curly syntax--java">}</span></span></div><div class="line"></div><div class="line"><span class="syntax--source syntax--java"><span class="syntax--storage syntax--type syntax--primitive syntax--java">void</span> <span class="syntax--meta syntax--function-call syntax--java"><span class="syntax--entity syntax--name syntax--function syntax--java">sort</span><span class="syntax--punctuation syntax--definition syntax--parameters syntax--begin syntax--bracket syntax--round syntax--java">(</span><span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> arr<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span><span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span><span class="syntax--punctuation syntax--separator syntax--delimiter syntax--java">,</span> <span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> low<span class="syntax--punctuation syntax--separator syntax--delimiter syntax--java">,</span> <span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> high<span class="syntax--punctuation syntax--definition syntax--parameters syntax--end syntax--bracket syntax--round syntax--java">)</span></span> <span class="syntax--punctuation syntax--section syntax--block syntax--begin syntax--bracket syntax--curly syntax--java">{</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">  </span><span class="syntax--keyword syntax--control syntax--java">if</span> <span class="syntax--punctuation syntax--bracket syntax--round syntax--java">(</span>low <span class="syntax--keyword syntax--operator syntax--comparison syntax--java">&lt;</span> high<span class="syntax--punctuation syntax--bracket syntax--round syntax--java">)</span> <span class="syntax--punctuation syntax--section syntax--block syntax--begin syntax--bracket syntax--curly syntax--java">{</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">    </span><span class="syntax--meta syntax--definition syntax--variable syntax--java"><span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> <span class="syntax--variable syntax--other syntax--definition syntax--java">pi</span> </span><span class="syntax--keyword syntax--operator syntax--assignment syntax--java">=</span> <span class="syntax--meta syntax--function-call syntax--java"><span class="syntax--entity syntax--name syntax--function syntax--java">partition</span><span class="syntax--punctuation syntax--definition syntax--parameters syntax--begin syntax--bracket syntax--round syntax--java">(</span>arr<span class="syntax--punctuation syntax--separator syntax--delimiter syntax--java">,</span> low<span class="syntax--punctuation syntax--separator syntax--delimiter syntax--java">,</span> high<span class="syntax--punctuation syntax--definition syntax--parameters syntax--end syntax--bracket syntax--round syntax--java">)</span></span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">    </span><span class="syntax--meta syntax--function-call syntax--java"><span class="syntax--entity syntax--name syntax--function syntax--java">sort</span><span class="syntax--punctuation syntax--definition syntax--parameters syntax--begin syntax--bracket syntax--round syntax--java">(</span>arr<span class="syntax--punctuation syntax--separator syntax--delimiter syntax--java">,</span> low<span class="syntax--punctuation syntax--separator syntax--delimiter syntax--java">,</span> pi<span class="syntax--keyword syntax--operator syntax--arithmetic syntax--java">-</span><span class="syntax--constant syntax--numeric syntax--decimal syntax--java">1</span><span class="syntax--punctuation syntax--definition syntax--parameters syntax--end syntax--bracket syntax--round syntax--java">)</span></span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">    </span><span class="syntax--meta syntax--function-call syntax--java"><span class="syntax--entity syntax--name syntax--function syntax--java">sort</span><span class="syntax--punctuation syntax--definition syntax--parameters syntax--begin syntax--bracket syntax--round syntax--java">(</span>arr<span class="syntax--punctuation syntax--separator syntax--delimiter syntax--java">,</span> pi<span class="syntax--keyword syntax--operator syntax--arithmetic syntax--java">+</span><span class="syntax--constant syntax--numeric syntax--decimal syntax--java">1</span><span class="syntax--punctuation syntax--separator syntax--delimiter syntax--java">,</span> high<span class="syntax--punctuation syntax--definition syntax--parameters syntax--end syntax--bracket syntax--round syntax--java">)</span></span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">  </span><span class="syntax--punctuation syntax--section syntax--block syntax--end syntax--bracket syntax--curly syntax--java">}</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="syntax--punctuation syntax--section syntax--block syntax--end syntax--bracket syntax--curly syntax--java">}</span></span></div></pre>
+<p>As we can see, Scala's implementation is much shorter and cleaner than Java. It's very easily readable, and doesn't take too long to understand. In Java, it would take a while to understand what each chunk of code does.</p>
+<h3 id="mergesort">Mergesort</h3>
+<p>Mergesort is a little longer, but it is still very short and clean in Scala. It also shows the power of Scala's easy pattern maching</p>
+<pre class="editor-colors lang-scala"><div class="line"><span class="syntax--source syntax--scala"><span class="syntax--keyword syntax--declaration syntax--scala">def</span> <span class="syntax--entity syntax--name syntax--function syntax--declaration">merge</span><span class="syntax--meta syntax--bracket syntax--scala">(</span><span class="syntax--variable syntax--parameter syntax--scala">left</span><span class="syntax--meta syntax--colon syntax--scala">:</span> <span class="syntax--entity syntax--name syntax--class">List</span><span class="syntax--scala syntax--type"><span class="syntax--bracket syntax--type syntax--scala">[</span><span class="syntax--class">Int</span>]</span>, <span class="syntax--variable syntax--parameter syntax--scala">right</span><span class="syntax--meta syntax--colon syntax--scala">:</span> <span class="syntax--entity syntax--name syntax--class">List</span><span class="syntax--scala syntax--type"><span class="syntax--bracket syntax--type syntax--scala">[</span><span class="syntax--class">Int</span>]</span>)<span class="syntax--keyword syntax--operator syntax--scala">:</span> <span class="syntax--entity syntax--name syntax--class">List</span><span class="syntax--scala syntax--type"><span class="syntax--bracket syntax--type syntax--scala">[</span><span class="syntax--class">Int</span>]</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--scala">=</span> <span class="syntax--meta syntax--bracket syntax--scala">(</span>left, right<span class="syntax--meta syntax--bracket syntax--scala">)</span> <span class="syntax--keyword syntax--control syntax--flow syntax--scala">match</span> <span class="syntax--meta syntax--bracket syntax--scala">{</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--keyword syntax--control syntax--flow syntax--scala">case</span><span class="syntax--meta syntax--bracket syntax--scala">(</span>left, <span class="syntax--constant syntax--language syntax--scala">Nil</span><span class="syntax--meta syntax--bracket syntax--scala">)</span> <span class="syntax--keyword syntax--operator syntax--scala">=&gt;</span> left</span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--keyword syntax--control syntax--flow syntax--scala">case</span><span class="syntax--meta syntax--bracket syntax--scala">(</span><span class="syntax--constant syntax--language syntax--scala">Nil</span>, right<span class="syntax--meta syntax--bracket syntax--scala">)</span> <span class="syntax--keyword syntax--operator syntax--scala">=&gt;</span> right</span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--keyword syntax--control syntax--flow syntax--scala">case</span><span class="syntax--meta syntax--bracket syntax--scala">(</span>leftHead <span class="syntax--keyword syntax--operator syntax--scala">::</span> leftTail, rightHead <span class="syntax--keyword syntax--operator syntax--scala">::</span> rightTail<span class="syntax--meta syntax--bracket syntax--scala">)</span> <span class="syntax--keyword syntax--operator syntax--scala">=&gt;</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">    </span><span class="syntax--keyword syntax--control syntax--flow syntax--scala">if</span> <span class="syntax--meta syntax--bracket syntax--scala">(</span>leftHead &lt; rightHead<span class="syntax--meta syntax--bracket syntax--scala">)</span> leftHead<span class="syntax--keyword syntax--operator syntax--scala">::</span>merge<span class="syntax--meta syntax--bracket syntax--scala">(</span>leftTail, right<span class="syntax--meta syntax--bracket syntax--scala">)</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">    </span><span class="syntax--keyword syntax--control syntax--flow syntax--scala">else</span> rightHead <span class="syntax--keyword syntax--operator syntax--scala">::</span> merge<span class="syntax--meta syntax--bracket syntax--scala">(</span>left, rightTail<span class="syntax--meta syntax--bracket syntax--scala">)</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="syntax--meta syntax--bracket syntax--scala">}</span></span></div><div class="line"></div><div class="line"><span class="syntax--source syntax--scala"><span class="syntax--keyword syntax--declaration syntax--scala">def</span> <span class="syntax--entity syntax--name syntax--function syntax--declaration">mergesort</span><span class="syntax--meta syntax--bracket syntax--scala">(</span><span class="syntax--variable syntax--parameter syntax--scala">list</span><span class="syntax--meta syntax--colon syntax--scala">:</span> <span class="syntax--entity syntax--name syntax--class">List</span><span class="syntax--scala syntax--type"><span class="syntax--bracket syntax--type syntax--scala">[</span><span class="syntax--class">Int</span>]</span>)<span class="syntax--keyword syntax--operator syntax--scala">:</span> <span class="syntax--entity syntax--name syntax--class">List</span><span class="syntax--scala syntax--type"><span class="syntax--bracket syntax--type syntax--scala">[</span><span class="syntax--class">Int</span>]</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--scala">=</span> <span class="syntax--meta syntax--bracket syntax--scala">{</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--keyword syntax--declaration syntax--stable syntax--scala">val</span> <span class="syntax--entity syntax--name syntax--val syntax--declaration">n</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--scala">=</span> list.length / <span class="syntax--constant syntax--numeric syntax--scala">2</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--keyword syntax--control syntax--flow syntax--scala">if</span> <span class="syntax--meta syntax--bracket syntax--scala">(</span>n == <span class="syntax--constant syntax--numeric syntax--scala">0</span><span class="syntax--meta syntax--bracket syntax--scala">)</span> list <span class="syntax--comment syntax--line syntax--double-slash syntax--scala"><span class="syntax--punctuation syntax--definition syntax--comment syntax--scala">//</span> i.e. if list is empty or single value, no sorting needed</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--keyword syntax--control syntax--flow syntax--scala">else</span> <span class="syntax--meta syntax--bracket syntax--scala">{</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">    </span><span class="syntax--keyword syntax--declaration syntax--stable syntax--scala">val</span> <span class="syntax--meta syntax--bracket syntax--scala">(</span>left, right<span class="syntax--meta syntax--bracket syntax--scala">)</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--scala">=</span> list.splitAt<span class="syntax--meta syntax--bracket syntax--scala">(</span>n<span class="syntax--meta syntax--bracket syntax--scala">)</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">    </span>merge<span class="syntax--meta syntax--bracket syntax--scala">(</span>mergesort<span class="syntax--meta syntax--bracket syntax--scala">(</span>left<span class="syntax--meta syntax--bracket syntax--scala">)</span>, mergesort<span class="syntax--meta syntax--bracket syntax--scala">(</span>right<span class="syntax--meta syntax--bracket syntax--scala">)</span><span class="syntax--meta syntax--bracket syntax--scala">)</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="leading-whitespace">  </span><span class="syntax--meta syntax--bracket syntax--scala">}</span></span></div><div class="line"><span class="syntax--source syntax--scala"><span class="syntax--meta syntax--bracket syntax--scala">}</span></span></div></pre>
+<p>Java's mergesort is very verbose and clunky</p>
+<pre class="editor-colors lang-java"><div class="line"><span class="syntax--source syntax--java"><span class="syntax--storage syntax--type syntax--primitive syntax--java">void</span> <span class="syntax--meta syntax--function-call syntax--java"><span class="syntax--entity syntax--name syntax--function syntax--java">merge</span><span class="syntax--punctuation syntax--definition syntax--parameters syntax--begin syntax--bracket syntax--round syntax--java">(</span><span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> arr<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span><span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span><span class="syntax--punctuation syntax--separator syntax--delimiter syntax--java">,</span> <span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> l<span class="syntax--punctuation syntax--separator syntax--delimiter syntax--java">,</span> <span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> m<span class="syntax--punctuation syntax--separator syntax--delimiter syntax--java">,</span> <span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> r<span class="syntax--punctuation syntax--definition syntax--parameters syntax--end syntax--bracket syntax--round syntax--java">)</span></span> <span class="syntax--punctuation syntax--section syntax--block syntax--begin syntax--bracket syntax--curly syntax--java">{</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">  </span><span class="syntax--meta syntax--definition syntax--variable syntax--java"><span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> <span class="syntax--variable syntax--other syntax--definition syntax--java">n1</span> </span><span class="syntax--keyword syntax--operator syntax--assignment syntax--java">=</span> m <span class="syntax--keyword syntax--operator syntax--arithmetic syntax--java">-</span> l <span class="syntax--keyword syntax--operator syntax--arithmetic syntax--java">+</span> <span class="syntax--constant syntax--numeric syntax--decimal syntax--java">1</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">  </span><span class="syntax--meta syntax--definition syntax--variable syntax--java"><span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> <span class="syntax--variable syntax--other syntax--definition syntax--java">n2</span> </span><span class="syntax--keyword syntax--operator syntax--assignment syntax--java">=</span> r <span class="syntax--keyword syntax--operator syntax--arithmetic syntax--java">-</span> m<span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">  </span><span class="syntax--meta syntax--definition syntax--variable syntax--java"><span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> <span class="syntax--variable syntax--other syntax--definition syntax--java">L</span><span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span><span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span> </span><span class="syntax--keyword syntax--operator syntax--assignment syntax--java">=</span> <span class="syntax--keyword syntax--control syntax--new syntax--java">new</span> <span class="syntax--storage syntax--type syntax--primitive syntax--array syntax--java">int</span> <span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span>n1<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">  </span><span class="syntax--meta syntax--definition syntax--variable syntax--java"><span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> <span class="syntax--variable syntax--other syntax--definition syntax--java">R</span><span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span><span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span> </span><span class="syntax--keyword syntax--operator syntax--assignment syntax--java">=</span> <span class="syntax--keyword syntax--control syntax--new syntax--java">new</span> <span class="syntax--storage syntax--type syntax--primitive syntax--array syntax--java">int</span> <span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span>n2<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">  </span><span class="syntax--keyword syntax--control syntax--java">for</span> <span class="syntax--punctuation syntax--bracket syntax--round syntax--java">(</span><span class="syntax--meta syntax--definition syntax--variable syntax--java"><span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> <span class="syntax--variable syntax--other syntax--definition syntax--java">i</span></span><span class="syntax--keyword syntax--operator syntax--assignment syntax--java">=</span><span class="syntax--constant syntax--numeric syntax--decimal syntax--java">0</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span> i<span class="syntax--keyword syntax--operator syntax--comparison syntax--java">&lt;</span>n1<span class="syntax--punctuation syntax--terminator syntax--java">;</span> <span class="syntax--keyword syntax--operator syntax--increment-decrement syntax--java">++</span>i<span class="syntax--punctuation syntax--bracket syntax--round syntax--java">)</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">      </span><span class="syntax--storage syntax--type syntax--object syntax--array syntax--java">L</span><span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span>i<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--java">=</span> arr<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span>l <span class="syntax--keyword syntax--operator syntax--arithmetic syntax--java">+</span> i<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">  </span><span class="syntax--keyword syntax--control syntax--java">for</span> <span class="syntax--punctuation syntax--bracket syntax--round syntax--java">(</span><span class="syntax--meta syntax--definition syntax--variable syntax--java"><span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> <span class="syntax--variable syntax--other syntax--definition syntax--java">j</span></span><span class="syntax--keyword syntax--operator syntax--assignment syntax--java">=</span><span class="syntax--constant syntax--numeric syntax--decimal syntax--java">0</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span> j<span class="syntax--keyword syntax--operator syntax--comparison syntax--java">&lt;</span>n2<span class="syntax--punctuation syntax--terminator syntax--java">;</span> <span class="syntax--keyword syntax--operator syntax--increment-decrement syntax--java">++</span>j<span class="syntax--punctuation syntax--bracket syntax--round syntax--java">)</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">      </span><span class="syntax--storage syntax--type syntax--object syntax--array syntax--java">R</span><span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span>j<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--java">=</span> arr<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span>m <span class="syntax--keyword syntax--operator syntax--arithmetic syntax--java">+</span> <span class="syntax--constant syntax--numeric syntax--decimal syntax--java">1</span><span class="syntax--keyword syntax--operator syntax--arithmetic syntax--java">+</span> j<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">  </span><span class="syntax--meta syntax--definition syntax--variable syntax--java"><span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> <span class="syntax--variable syntax--other syntax--definition syntax--java">i</span> </span><span class="syntax--keyword syntax--operator syntax--assignment syntax--java">=</span> <span class="syntax--constant syntax--numeric syntax--decimal syntax--java">0</span><span class="syntax--punctuation syntax--separator syntax--delimiter syntax--java">,</span> j <span class="syntax--keyword syntax--operator syntax--assignment syntax--java">=</span> <span class="syntax--constant syntax--numeric syntax--decimal syntax--java">0</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">  </span><span class="syntax--meta syntax--definition syntax--variable syntax--java"><span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> <span class="syntax--variable syntax--other syntax--definition syntax--java">k</span> </span><span class="syntax--keyword syntax--operator syntax--assignment syntax--java">=</span> l<span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">  </span><span class="syntax--keyword syntax--control syntax--java">while</span> <span class="syntax--punctuation syntax--bracket syntax--round syntax--java">(</span>i <span class="syntax--keyword syntax--operator syntax--comparison syntax--java">&lt;</span> n1 <span class="syntax--keyword syntax--operator syntax--logical syntax--java">&amp;&amp;</span> j <span class="syntax--keyword syntax--operator syntax--comparison syntax--java">&lt;</span> n2<span class="syntax--punctuation syntax--bracket syntax--round syntax--java">)</span> <span class="syntax--punctuation syntax--section syntax--block syntax--begin syntax--bracket syntax--curly syntax--java">{</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">      </span><span class="syntax--keyword syntax--control syntax--java">if</span> <span class="syntax--punctuation syntax--bracket syntax--round syntax--java">(</span><span class="syntax--storage syntax--type syntax--object syntax--array syntax--java">L</span><span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span>i<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span> <span class="syntax--keyword syntax--operator syntax--comparison syntax--java">&lt;=</span> <span class="syntax--storage syntax--type syntax--object syntax--array syntax--java">R</span><span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span>j<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span><span class="syntax--punctuation syntax--bracket syntax--round syntax--java">)</span> <span class="syntax--punctuation syntax--section syntax--block syntax--begin syntax--bracket syntax--curly syntax--java">{</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">          </span>arr<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span>k<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--java">=</span> <span class="syntax--storage syntax--type syntax--object syntax--array syntax--java">L</span><span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span>i<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">          </span>i<span class="syntax--keyword syntax--operator syntax--increment-decrement syntax--java">++</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">      </span><span class="syntax--punctuation syntax--section syntax--block syntax--end syntax--bracket syntax--curly syntax--java">}</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">      </span><span class="syntax--keyword syntax--control syntax--java">else</span> <span class="syntax--punctuation syntax--section syntax--block syntax--begin syntax--bracket syntax--curly syntax--java">{</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">          </span>arr<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span>k<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--java">=</span> <span class="syntax--storage syntax--type syntax--object syntax--array syntax--java">R</span><span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span>j<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">          </span>j<span class="syntax--keyword syntax--operator syntax--increment-decrement syntax--java">++</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">      </span><span class="syntax--punctuation syntax--section syntax--block syntax--end syntax--bracket syntax--curly syntax--java">}</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">      </span>k<span class="syntax--keyword syntax--operator syntax--increment-decrement syntax--java">++</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">  </span><span class="syntax--punctuation syntax--section syntax--block syntax--end syntax--bracket syntax--curly syntax--java">}</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">  </span><span class="syntax--keyword syntax--control syntax--java">while</span> <span class="syntax--punctuation syntax--bracket syntax--round syntax--java">(</span>i <span class="syntax--keyword syntax--operator syntax--comparison syntax--java">&lt;</span> n1<span class="syntax--punctuation syntax--bracket syntax--round syntax--java">)</span> <span class="syntax--punctuation syntax--section syntax--block syntax--begin syntax--bracket syntax--curly syntax--java">{</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">      </span>arr<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span>k<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--java">=</span> <span class="syntax--storage syntax--type syntax--object syntax--array syntax--java">L</span><span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span>i<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">      </span>i<span class="syntax--keyword syntax--operator syntax--increment-decrement syntax--java">++</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">      </span>k<span class="syntax--keyword syntax--operator syntax--increment-decrement syntax--java">++</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">  </span><span class="syntax--punctuation syntax--section syntax--block syntax--end syntax--bracket syntax--curly syntax--java">}</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">  </span><span class="syntax--keyword syntax--control syntax--java">while</span> <span class="syntax--punctuation syntax--bracket syntax--round syntax--java">(</span>j <span class="syntax--keyword syntax--operator syntax--comparison syntax--java">&lt;</span> n2<span class="syntax--punctuation syntax--bracket syntax--round syntax--java">)</span> <span class="syntax--punctuation syntax--section syntax--block syntax--begin syntax--bracket syntax--curly syntax--java">{</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">      </span>arr<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span>k<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span> <span class="syntax--keyword syntax--operator syntax--assignment syntax--java">=</span> <span class="syntax--storage syntax--type syntax--object syntax--array syntax--java">R</span><span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span>j<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">      </span>j<span class="syntax--keyword syntax--operator syntax--increment-decrement syntax--java">++</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">      </span>k<span class="syntax--keyword syntax--operator syntax--increment-decrement syntax--java">++</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">  </span><span class="syntax--punctuation syntax--section syntax--block syntax--end syntax--bracket syntax--curly syntax--java">}</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="syntax--punctuation syntax--section syntax--block syntax--end syntax--bracket syntax--curly syntax--java">}</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="syntax--storage syntax--type syntax--primitive syntax--java">void</span> <span class="syntax--meta syntax--function-call syntax--java"><span class="syntax--entity syntax--name syntax--function syntax--java">sort</span><span class="syntax--punctuation syntax--definition syntax--parameters syntax--begin syntax--bracket syntax--round syntax--java">(</span><span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> arr<span class="syntax--punctuation syntax--bracket syntax--square syntax--java">[</span><span class="syntax--punctuation syntax--bracket syntax--square syntax--java">]</span><span class="syntax--punctuation syntax--separator syntax--delimiter syntax--java">,</span> <span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> l<span class="syntax--punctuation syntax--separator syntax--delimiter syntax--java">,</span> <span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> r<span class="syntax--punctuation syntax--definition syntax--parameters syntax--end syntax--bracket syntax--round syntax--java">)</span></span> <span class="syntax--punctuation syntax--section syntax--block syntax--begin syntax--bracket syntax--curly syntax--java">{</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">  </span><span class="syntax--keyword syntax--control syntax--java">if</span> <span class="syntax--punctuation syntax--bracket syntax--round syntax--java">(</span>l <span class="syntax--keyword syntax--operator syntax--comparison syntax--java">&lt;</span> r<span class="syntax--punctuation syntax--bracket syntax--round syntax--java">)</span> <span class="syntax--punctuation syntax--section syntax--block syntax--begin syntax--bracket syntax--curly syntax--java">{</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">      </span><span class="syntax--meta syntax--definition syntax--variable syntax--java"><span class="syntax--storage syntax--type syntax--primitive syntax--java">int</span> <span class="syntax--variable syntax--other syntax--definition syntax--java">m</span> </span><span class="syntax--keyword syntax--operator syntax--assignment syntax--java">=</span> <span class="syntax--punctuation syntax--bracket syntax--round syntax--java">(</span>l<span class="syntax--keyword syntax--operator syntax--arithmetic syntax--java">+</span>r<span class="syntax--punctuation syntax--bracket syntax--round syntax--java">)</span><span class="syntax--keyword syntax--operator syntax--arithmetic syntax--java">/</span><span class="syntax--constant syntax--numeric syntax--decimal syntax--java">2</span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">      </span><span class="syntax--meta syntax--function-call syntax--java"><span class="syntax--entity syntax--name syntax--function syntax--java">sort</span><span class="syntax--punctuation syntax--definition syntax--parameters syntax--begin syntax--bracket syntax--round syntax--java">(</span>arr<span class="syntax--punctuation syntax--separator syntax--delimiter syntax--java">,</span> l<span class="syntax--punctuation syntax--separator syntax--delimiter syntax--java">,</span> m<span class="syntax--punctuation syntax--definition syntax--parameters syntax--end syntax--bracket syntax--round syntax--java">)</span></span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">      </span><span class="syntax--meta syntax--function-call syntax--java"><span class="syntax--entity syntax--name syntax--function syntax--java">sort</span><span class="syntax--punctuation syntax--definition syntax--parameters syntax--begin syntax--bracket syntax--round syntax--java">(</span>arr <span class="syntax--punctuation syntax--separator syntax--delimiter syntax--java">,</span> m<span class="syntax--keyword syntax--operator syntax--arithmetic syntax--java">+</span><span class="syntax--constant syntax--numeric syntax--decimal syntax--java">1</span><span class="syntax--punctuation syntax--separator syntax--delimiter syntax--java">,</span> r<span class="syntax--punctuation syntax--definition syntax--parameters syntax--end syntax--bracket syntax--round syntax--java">)</span></span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">      </span><span class="syntax--meta syntax--function-call syntax--java"><span class="syntax--entity syntax--name syntax--function syntax--java">merge</span><span class="syntax--punctuation syntax--definition syntax--parameters syntax--begin syntax--bracket syntax--round syntax--java">(</span>arr<span class="syntax--punctuation syntax--separator syntax--delimiter syntax--java">,</span> l<span class="syntax--punctuation syntax--separator syntax--delimiter syntax--java">,</span> m<span class="syntax--punctuation syntax--separator syntax--delimiter syntax--java">,</span> r<span class="syntax--punctuation syntax--definition syntax--parameters syntax--end syntax--bracket syntax--round syntax--java">)</span></span><span class="syntax--punctuation syntax--terminator syntax--java">;</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="leading-whitespace">  </span><span class="syntax--punctuation syntax--section syntax--block syntax--end syntax--bracket syntax--curly syntax--java">}</span></span></div><div class="line"><span class="syntax--source syntax--java"><span class="syntax--punctuation syntax--section syntax--block syntax--end syntax--bracket syntax--curly syntax--java">}</span></span></div></pre>
+<h2 id="why-should-you-care-about-scala-">Why should you care about Scala?</h2>
+<ul>
+<li>Though I don’t expect anyone in this class to pick up Scala and use it for SoftDev (we have to use Python, fellas), it is a good language to have in your toolbelt!</li>
+<li>You can also apply your SD knowledge to Scala since there are web frameworks out there that use Scala as the backend!</li>
+<li>It’s just something cool y’all can experiment with.</li>
+<li>Also, since it’s strongly typed and ran on our favorite virtual machine, I’m assuming it might be a tad faster than Python + Flask</li>
+</ul></body>
+</html>
